@@ -1,0 +1,23 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+	int num1, total = 0;
+	b:
+	cout << "\n";
+	cout << "\n";
+	cout << "Input a number: ";
+	cin >> num1;
+	
+	for (int i=1; i<=num1; i++){
+		total = total + i;
+		
+	}
+	
+	cout << "The sum of all whole numbers from 1 to " << num1 << " is: " << total;
+	goto b;
+_getch();
+return 0;
+}
