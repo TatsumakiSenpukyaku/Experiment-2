@@ -1,0 +1,26 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int F = 0,S = 1,Terms,J;
+	cout << "The 20 terms of the Fibonacci Sequence are:" << endl;
+	
+	for (Terms=J; J<20; J++ )
+	{
+		Terms=F+S;
+		F=S;
+		S=Terms;
+
+		
+		cout << Terms << ", ";
+		
+		
+		
+		
+	}
+	_getch();
+	return 0;
+}
