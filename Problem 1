@@ -1,0 +1,43 @@
+//PROBLEM 1: 1. An Internet service provider has 3 different subscription packages for its customers:
+//Package A: For P995/mo 10 hrs of access are provided. Additional hours are P20/hr. Package B: For P1495/mo 20 hrs of access are provided.
+//Additional hours are P10/hr. Package C: For P1995/mo of unlimited access is provided. 
+//Write a program that calculates a customer’s monthly bill. It should ask which package the customer has purchased and how many hours were used.
+//It should then display the total amount due.
+
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+	char x;
+	int y,bill,h;
+	cout << "Package A: 995/mo 10hrs of access, additional hrs: 20/hr" << endl;
+	cout << "Package B: 1495/mo 20 hrs of access, additional hrs: 10/hr" << endl;
+	cout << "Package C: 1995/mo unlimited access" << endl;
+	cout << "Which package have you purchased?" << endl;
+	cin >> x;
+	cout << "How many hours have you used?" << endl;
+	cin >> y;
+	cout << "The total amount is" << endl;
+	
+	if(x='a')
+	{
+	h=y-10;
+	bill=h*20+995;
+	cout << bill << endl;	
+	}
+	else if(x='b')
+	{
+	h=y-20;
+	bill=h*20+1495;
+	cout << bill << endl;
+	}
+	else if(x='c')
+	{
+		bill=1995;
+	}
+	
+	return 0;
+}
