@@ -1,0 +1,56 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int gallonsUsed, bill, bal;
+    char ans;
+
+    cout << "Customer's Water bill" << endl;
+    cout << "P35 water demand charge plus a consumption(use) charge of 1.10 for every gallon. " << endl;
+    cout << "\nHow many gallons are used?: ";
+    cin >> gallonsUsed;
+
+    bill = (gallonsUsed * 1.10) + 35;
+    cout << "Your Water bill is: " << bill;
+    cout << "\nDo you have any unpaid balance? Y/N: ";
+    cin >> ans;
+
+    switch (ans)
+	{
+
+    case 'Y':
+    case 'y':
+            {
+
+             cout << "\n\nHow many months?: ";
+             cin >> bal;
+
+             bill = (gallonsUsed * 1.10) + 35 + bal * 20;
+
+             cout << "Your Water bill is: " << bill;
+
+            }
+
+    case 'N':
+    case 'n':
+            {
+                cout << "\nThank you!";
+            }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
