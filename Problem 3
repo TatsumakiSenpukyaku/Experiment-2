@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cmath>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	double Z=2.5, V=0, Y;
+	int X;
+	cout << "Enter X value: ";
+	cin >> X;
+	cout << "\n";
+	cout << "Enter Y value: ";
+	cin >> Y;
+	
+	
+	switch(X)
+	{
+		case 1:
+			if (Y > 1 && Y < 5)
+			{
+				V = X*Y*Z;
+				cout << "Total = " << V;
+			}
+			else 
+			{
+				V = (X+Y)/Z;	
+				cout << "Total = " << V;
+			}
+		case 2:
+			if (Y <= 5)
+			{
+				V = (X-Y)/Z;
+				cout << "Total = " << V;
+
+			}
+			else
+			{
+				V = X-(sqrt (Y + Z));
+			cout << "Total = " << V;
+
+			}
+			default: 
+			V = X+Y+Z;
+			cout << "Total = " << V;
+	
+	}
+	_getch();
+	return 0;
+}
+ 
